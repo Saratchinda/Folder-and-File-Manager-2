@@ -1,0 +1,50 @@
+.file-list {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.file-list h2 {
+  margin: 0 0 10px 0;
+}
+
+.file-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.file-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.file-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.file-list .file-id {
+  background-color: #ddd;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.file-list .delete-button {
+  background-color: #ffcccc;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.file-list .delete-button:hover {
+  background-color: #ff9999;
+}
