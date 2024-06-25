@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './ExplorerActions.css';
-import { createFolder, createFile } from '../../services/api';
+import { createFolder } from '../../services/folderService';
+import { createFile } from '../../services/fileService';
 
 function ExplorerActions({ setFolders, setFiles, selectedFolder }) {
   const [folderName, setFolderName] = useState('');
@@ -58,4 +59,3 @@ function ExplorerActions({ setFolders, setFiles, selectedFolder }) {
 }
 
 export default ExplorerActions;
-

@@ -16,7 +16,6 @@ const App = () => {
 
   return (
     <Router>
-     
       <div className="container">
         <ExplorerActions setFolders={setFolders} setFiles={setFiles} selectedFolder={selectedFolder} />
         <FolderList folders={folders} setFolders={setFolders} selectedFolder={selectedFolder} setSelectedFolder={setSelectedFolder} />
@@ -26,7 +25,6 @@ const App = () => {
         {selectedFile && <RenamePanel selectedItem={selectedFile} setFiles={setFiles} type="file" />}
         {selectedFolder && !selectedFile && <RenamePanel selectedItem={selectedFolder} setFolders={setFolders} type="folder" />}
       </div>
-     
     </Router>
   );
 };

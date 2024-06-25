@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './RenamePanel.css';
-import { renameFile, renameFolder, deleteFile, deleteFolder } from '../../services/api';
+import { renameFile, deleteFile } from '../../services/fileService';
+import { renameFolder, deleteFolder } from '../../services/folderService';
 
 function RenamePanel({ selectedItem, setFiles, setFolders, type }) {
   const [newName, setNewName] = useState('');
@@ -34,7 +35,6 @@ function RenamePanel({ selectedItem, setFiles, setFolders, type }) {
         });
     }
   };
-
   const handleDelete = () => {
     if (type === 'file') {
       deleteFile(selectedItem.id)

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './FileList.css';
-import { fetchFilesFromFolder, deleteFile } from '../../services/api';
+import { fetchFilesFromFolder, deleteFile } from '../../services/fileService';
 
 function FileList({ files, setFiles, selectedFolder, setSelectedFile }) {
   useEffect(() => {
